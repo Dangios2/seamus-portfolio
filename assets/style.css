@@ -1,4 +1,4 @@
-#nav {
+nav {
     background-color: #595959; 
     display: flex;
     justify-content: space-between;
@@ -6,12 +6,22 @@
     
 }
 
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+.tauri-regular {
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
  nav img { height: 100px ;
 
 float:left; }
 
-#main-menu {
+main-menu {
     display: flex;
     gap: 50px;
 }
@@ -27,10 +37,12 @@ float:left; }
         width: 50%;
       }
 
+body {text-align: center;
+font-family:"Tauri" ;}
 
 p {text-align: center;}
 h1{text-align: center;
-font-family: sans-serif;}
+font-family: "Kanit";}
 button {background-color: #BFBFBF;
 padding: 10px;
 font-family: sans-serif;
@@ -38,18 +50,60 @@ border: none;
 width: 150;
 height: 50px;}
 
-footer {padding: 25px;
+footer {
+position: fixed;
+ width: 100%;
 align-items: right;
+left: 0;
+bottom: 0;
+padding: 20px;
+padding-right: 20px;
 background-color: #BFBFBF;
-display: flex;
-justify-content: right;}
+display: flex ;
+justify-content: space-between;
+justify-content: center;
+gap: 50px;}
 
 .footer-button{
     border-width: 1px;
     border-color: white;
     border-style: solid;
     border-radius: 5px;
+   width: 100px;
 }
 
 
 button :hover{ border: 1px}
+
+
+
+.image-grid{ 
+    --gap:16px;
+    --num-cols: 3;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap:);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols) ,1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+
+}
+
+.image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+
