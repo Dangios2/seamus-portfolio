@@ -40,7 +40,8 @@ main-menu {
 body {text-align: center;
 font-family:"Tauri" ;}
 
-p {text-align: center;}
+p {text-align: center;
+display: padding 20px;}
 h1{text-align: center;
 font-family: "Kanit";}
 button {background-color: #BFBFBF;
@@ -51,17 +52,15 @@ width: 150;
 height: 50px;}
 
 footer {
+    display: flex;
 position: fixed;
  width: 100%;
 align-items: right;
-left: 0;
-bottom: 0;
+bottom: 0px;
+left: 0px
 padding: 20px;
-padding-right: 20px;
 background-color: #BFBFBF;
-display: flex ;
-justify-content: space-between;
-justify-content: center;
+justify-content: right;
 gap: 50px;}
 
 .footer-button{
@@ -69,7 +68,8 @@ gap: 50px;}
     border-color: white;
     border-style: solid;
     border-radius: 5px;
-   width: 100px;
+   width: 100px; 
+   left: 20px;
 }
 
 
@@ -105,5 +105,8 @@ button :hover{ border: 1px}
         --row-height: 200px;
     }
 }
+
+
+
 
 
